@@ -1,0 +1,197 @@
+import type { CaseStudy } from '@/types';
+
+export const caseStudies: CaseStudy[] = [
+  {
+    id: '1',
+    slug: 'impact-of-competency-mapping',
+    title: 'Impact of Competency Mapping on Business Success',
+    subtitle: 'From Data to Decisions: Creating a Robust Staff Forecasting Model',
+    excerpt: 'Competency mapping drives organizational effectiveness by driving alignment between employee skills and business goals.',
+    content: `
+      <h2>The Challenge</h2>
+      <p>A fast-growing SaaS company with 200+ employees was struggling with role clarity and career progression. Employees didn't understand what was expected of them, and managers lacked a consistent framework for evaluating performance and making promotion decisions.</p>
+      
+      <h2>Our Approach</h2>
+      <p>We designed and implemented a comprehensive competency framework:</p>
+      <ul>
+        <li>Mapped competencies for all roles across the organization</li>
+        <li>Created clear behavioral indicators for each competency level</li>
+        <li>Integrated competencies into performance management</li>
+        <li>Built career pathways showing progression requirements</li>
+      </ul>
+      
+      <h2>The Results</h2>
+      <ul>
+        <li><strong>35% improvement</strong> in employee clarity about role expectations</li>
+        <li><strong>50% reduction</strong> in promotion decision time</li>
+        <li><strong>28% increase</strong> in internal mobility applications</li>
+        <li><strong>40% improvement</strong> in manager confidence for performance conversations</li>
+      </ul>
+      
+      <h2>Key Insights</h2>
+      <p>Competency mapping isn't just an HR exercise—it's a business tool that drives alignment, clarity, and performance across the organization.</p>
+    `,
+    featuredImage: '/images/team_huddle_smile.jpg',
+    clientName: 'Leading SaaS Company',
+    industry: 'Technology',
+    duration: '4 months',
+    results: [
+      '35% improvement in role clarity',
+      '50% reduction in promotion decision time',
+      '28% increase in internal mobility',
+      '40% improvement in manager confidence'
+    ],
+    publishedAt: '2025-11-15',
+    status: 'published',
+    metaTitle: 'Impact of Competency Mapping on Business Success | QuadAgile Case Study',
+    metaDescription: 'See how we helped a SaaS company improve role clarity by 35% and reduce promotion decision time by 50% through competency mapping.'
+  },
+  {
+    id: '2',
+    slug: 'hr-partner-for-emerging-businesses',
+    title: 'HR Partner for Emerging Businesses',
+    subtitle: 'Empowering emerging businesses with dedicated HR solutions to build strong teams, foster growth, and drive success.',
+    excerpt: 'Empowering emerging businesses with dedicated HR solutions to build strong teams, foster growth, and drive success.',
+    content: `
+      <h2>The Challenge</h2>
+      <p>An emerging fintech startup was scaling rapidly—from 15 to 80 employees in 18 months. The founder was handling all HR matters personally, which became unsustainable and took focus away from core business priorities.</p>
+      
+      <h2>Our Approach</h2>
+      <p>We acted as their fractional HR partner:</p>
+      <ul>
+        <li>Built foundational HR policies and employee handbook</li>
+        <li>Implemented an ATS and structured hiring process</li>
+        <li>Designed onboarding program for new hires</li>
+        <li>Created compensation framework</li>
+        <li>Established performance review cadence</li>
+      </ul>
+      
+      <h2>The Results</h2>
+      <ul>
+        <li><strong>60% reduction</strong> in founder's time spent on HR</li>
+        <li><strong>3× faster</strong> time-to-hire</li>
+        <li><strong>92%</strong> new hire satisfaction with onboarding</li>
+        <li><strong>Zero</strong> compliance issues during audits</li>
+      </ul>
+      
+      <h2>Key Insights</h2>
+      <p>Early-stage companies don't need full-time HR leadership, but they do need HR expertise. Fractional HR partnership provides the right support at the right time.</p>
+    `,
+    featuredImage: '/images/onboarding_laptop.jpg',
+    clientName: 'Fintech Startup',
+    industry: 'Financial Services',
+    duration: 'Ongoing partnership',
+    results: [
+      '60% reduction in founder HR time',
+      '3× faster time-to-hire',
+      '92% onboarding satisfaction',
+      'Zero compliance issues'
+    ],
+    publishedAt: '2025-10-22',
+    status: 'published',
+    metaTitle: 'HR Partner for Emerging Businesses | QuadAgile Case Study',
+    metaDescription: 'See how our fractional HR partnership helped a fintech startup scale from 15 to 80 employees while reducing founder HR time by 60%.'
+  },
+  {
+    id: '3',
+    slug: 'tailored-talent-model',
+    title: 'Tailored Talent Model for Promoting Organizational Excellence',
+    subtitle: 'Talent model provides a structured framework for aligning employee capabilities, roles and development paths.',
+    excerpt: 'Talent model provides a structured framework for aligning employee capabilities, roles and development paths.',
+    content: `
+      <h2>The Challenge</h2>
+      <p>A mid-size manufacturing company was facing high attrition in critical technical roles. Employees saw limited growth opportunities and were leaving for competitors offering better career prospects.</p>
+      
+      <h2>Our Approach</h2>
+      <p>We developed a tailored talent model:</p>
+      <ul>
+        <li>Defined technical and leadership career tracks</li>
+        <li>Created skill-based progression criteria</li>
+        <li>Designed development programs for each level</li>
+        <li>Built succession planning framework</li>
+        <li>Integrated with compensation structure</li>
+      </ul>
+      
+      <h2>The Results</h2>
+      <ul>
+        <li><strong>45% reduction</strong> in technical role attrition</li>
+        <li><strong>60%</strong> of senior roles filled internally</li>
+        <li><strong>3.5× ROI</strong> on development program investment</li>
+        <li><strong>78%</strong> employee confidence in growth opportunities</li>
+      </ul>
+      
+      <h2>Key Insights</h2>
+      <p>When employees can see their future with the company, they're more likely to stay and invest in their development.</p>
+    `,
+    featuredImage: '/images/manager_1on1.jpg',
+    clientName: 'Manufacturing Company',
+    industry: 'Manufacturing',
+    duration: '6 months',
+    results: [
+      '45% reduction in attrition',
+      '60% internal promotion rate',
+      '3.5× ROI on development',
+      '78% confidence in growth'
+    ],
+    publishedAt: '2025-09-30',
+    status: 'published',
+    metaTitle: 'Tailored Talent Model for Organizational Excellence | QuadAgile Case Study',
+    metaDescription: 'Learn how we reduced technical role attrition by 45% through a tailored talent model with clear career pathways.'
+  },
+  {
+    id: '4',
+    slug: 'integrated-performance-management',
+    title: 'An Integrated Performance Management System for Objective and Intuitive Evaluation',
+    subtitle: 'The Performance Management System evaluates employee performance, supporting growth, talent decisions, and career development.',
+    excerpt: 'The Performance Management System evaluates employee performance, supporting growth, talent decisions, and career development.',
+    content: `
+      <h2>The Challenge</h2>
+      <p>A professional services firm was struggling with their annual performance review process. Managers found it burdensome, employees found it demotivating, and the output didn't drive meaningful development conversations.</p>
+      
+      <h2>Our Approach</h2>
+      <p>We redesigned the entire performance management system:</p>
+      <ul>
+        <li>Shifted from annual to quarterly check-ins</li>
+        <li>Introduced continuous feedback mechanisms</li>
+        <li>Built goal-setting framework aligned to company OKRs</li>
+        <li>Trained managers on coaching conversations</li>
+        <li>Implemented 360-degree feedback for senior roles</li>
+      </ul>
+      
+      <h2>The Results</h2>
+      <ul>
+        <li><strong>80%</strong> manager satisfaction with the new process</li>
+        <li><strong>65%</strong> increase in development conversations</li>
+        <li><strong>40%</strong> reduction in review cycle time</li>
+        <li><strong>25%</strong> improvement in employee engagement scores</li>
+      </ul>
+      
+      <h2>Key Insights</h2>
+      <p>Performance management should be a continuous conversation, not an annual event. When done right, it drives engagement and development.</p>
+    `,
+    featuredImage: '/images/decision_meeting.jpg',
+    clientName: 'Professional Services Firm',
+    industry: 'Professional Services',
+    duration: '5 months',
+    results: [
+      '80% manager satisfaction',
+      '65% more development conversations',
+      '40% faster review cycle',
+      '25% engagement improvement'
+    ],
+    publishedAt: '2025-08-15',
+    status: 'published',
+    metaTitle: 'Integrated Performance Management System | QuadAgile Case Study',
+    metaDescription: 'Discover how we transformed a burdensome annual review process into a continuous performance management system that drives engagement.'
+  }
+];
+
+export const getCaseStudyBySlug = (slug: string): CaseStudy | undefined => {
+  return caseStudies.find(study => study.slug === slug);
+};
+
+export const getPublishedCaseStudies = (): CaseStudy[] => {
+  return caseStudies.filter(study => study.status === 'published').sort((a, b) => 
+    new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
+  );
+};

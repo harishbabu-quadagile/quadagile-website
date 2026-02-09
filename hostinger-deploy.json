@@ -1,0 +1,33 @@
+{
+  "name": "QuadAgile Website",
+  "version": "1.0.0",
+  "description": "One-click deployment configuration for Hostinger",
+  "deployment": {
+    "type": "hostinger",
+    "buildCommand": "cd app && npm install && npm run build",
+    "outputDirectory": "app/dist",
+    "environmentVariables": [
+      "VITE_API_URL",
+      "VITE_RECAPTCHA_SITE_KEY",
+      "VITE_GA4_ID"
+    ]
+  },
+  "hostinger": {
+    "phpVersion": "8.2",
+    "nodeVersion": "20",
+    "ssl": {
+      "enabled": true,
+      "forceHttps": true
+    },
+    "headers": {
+      "X-Frame-Options": "SAMEORIGIN",
+      "X-Content-Type-Options": "nosniff",
+      "X-XSS-Protection": "1; mode=block",
+      "Referrer-Policy": "strict-origin-when-cross-origin"
+    }
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "node scripts/hostinger-deploy.js"
+  }
+}

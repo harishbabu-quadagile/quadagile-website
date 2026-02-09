@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://quadagile.in/</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Blogs Listing -->
+  <url>
+    <loc>https://quadagile.in/blogs</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://quadagile.in/blogs/why-decision-making-breaks</loc>
+    <lastmod>2026-01-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://quadagile.in/images/hero_team_meeting.jpg</image:loc>
+      <image:title>Why Decision-Making Breaks as Indian Startups Scale</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://quadagile.in/blogs/stop-hiring-for-tasks-start-hiring-for-success</loc>
+    <lastmod>2025-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://quadagile.in/images/interview_panel.jpg</image:loc>
+      <image:title>Stop Hiring for Tasks, Start Hiring for Success</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://quadagile.in/blogs/the-hidden-cost-of-slow-hiring</loc>
+    <lastmod>2025-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://quadagile.in/images/decision_meeting.jpg</image:loc>
+      <image:title>The Hidden Cost of Slow Hiring</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://quadagile.in/blogs/culture-cornerstone-of-okr-adoption</loc>
+    <lastmod>2025-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://quadagile.in/images/workshop_whiteboard.jpg</image:loc>
+      <image:title>Culture: Corner Stone of OKR Adoption</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Case Studies Listing -->
+  <url>
+    <loc>https://quadagile.in/case-studies</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- Case Study Detail Pages -->
+  <url>
+    <loc>https://quadagile.in/case-studies/impact-of-competency-mapping</loc>
+    <lastmod>2025-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://quadagile.in/images/team_huddle_smile.jpg</image:loc>
+      <image:title>Impact of Competency Mapping on Business Success</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://quadagile.in/case-studies/hr-partner-for-emerging-businesses</loc>
+    <lastmod>2025-10-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://quadagile.in/images/onboarding_laptop.jpg</image:loc>
+      <image:title>HR Partner for Emerging Businesses</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://quadagile.in/case-studies/tailored-talent-model</loc>
+    <lastmod>2025-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://quadagile.in/images/manager_1on1.jpg</image:loc>
+      <image:title>Tailored Talent Model for Organizational Excellence</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://quadagile.in/case-studies/integrated-performance-management</loc>
+    <lastmod>2025-08-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://quadagile.in/images/decision_meeting.jpg</image:loc>
+      <image:title>Integrated Performance Management System</image:title>
+    </image:image>
+  </url>
+  
+</urlset>
