@@ -1,103 +1,28 @@
-# QuadAgile - One-Click Deployment to Hostinger
-# This workflow automatically deploys the website to Hostinger on push to main
+name: QuadAgile Frontend Auto-Deploy
 
-name: Deploy to Hostinger
-
+# Trigger on pushes to main branch
 on:
   push:
-    branches: [ main, master ]
-  pull_request:
-    branches: [ main, master ]
-  workflow_dispatch:  # Manual trigger
+    branches:
+      - main
 
 jobs:
-  build-and-deploy:
+  ftp-deploy:
     runs-on: ubuntu-latest
-    
-    steps:
-    # Checkout the repository
-    - name: Checkout code
-      uses: actions/checkout@v4
-      
-    # Setup Node.js
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
-        cache: 'npm'
-        cache-dependency-path: app/package-lock.json
-    
-    # Install dependencies and build
-    - name: Install dependencies
-      working-directory: ./app
-      run: npm ci
-      
-    - name: Build frontend
-      working-directory: ./app
-      run: npm run build
-      env:
-        VITE_API_URL: ${{ secrets.VITE_API_URL }}
-        VITE_RECAPTCHA_SITE_KEY: ${{ secrets.VITE_RECAPTCHA_SITE_KEY }}
-        VITE_GA4_ID: ${{ secrets.VITE_GA4_ID }}
-    
-    # Deploy to Hostinger via FTP
-    - name: Deploy to Hostinger
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-      with:
-        server: ${{ secrets.HOSTINGER_FTP_SERVER }}
-        username: ${{ secrets.HOSTINGER_FTP_USERNAME }}
-        password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
-        local-dir: ./app/dist/
-        server-dir: /public_html/
-        dangerous-clean-slate: true
-        exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/**
-          **/src/**
-          **/*.md
-          **/package*.json
-          **/tsconfig*.json
-          **/vite.config.ts
-          **/tailwind.config.js
-    
-    # Verify deployment
-    - name: Verify deployment
-      run: |
-        echo "Deployment completed successfully!"
-        echo "Website URL: https://quadagile.in"
-    
-    # Notify on success
-    - name: Notify success
-      if: success()
-      run: |
-        echo "✅ Deployment successful!"
-        echo "Your website is now live at https://quadagile.in"
 
-  deploy-backend:
-    runs-on: ubuntu-latest
-    needs: build-and-deploy
-    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
-    
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-      
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
-        
-    - name: Deploy backend via SSH
-      uses: appleboy/ssh-action@v1.0.0
-      with:
-        host: ${{ secrets.HOSTINGER_SSH_HOST }}
-        username: ${{ secrets.HOSTINGER_SSH_USERNAME }}
-        password: ${{ secrets.HOSTINGER_SSH_PASSWORD }}
-        port: 22
-        script: |
-          cd ~/backend
-          git pull origin main
-          npm install --production
-          pm2 restart quadagile-cms || pm2 start server.js --name quadagile-cms
-          pm2 save
+      # Step 1: Checkout the repo
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Step 2: Upload frontend to Hostinger via FTP
+      - name: Deploy Frontend via FTP
+        uses: SamKirkland/FTP-Deploy-Action@4.3.0
+        with:
+          server: ftp.quadagile.in
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: app/dist       # Folder to deploy
+          server-dir: public_html   # Destination folder on Hostinger
+          git-ftp-args: --insecure  # optional, bypass some SSL issues
+
