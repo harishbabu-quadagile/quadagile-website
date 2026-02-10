@@ -1,0 +1,25 @@
+{
+  "name": "kimi_agent_quadagile",
+  "version": "1.0.0",
+  "description": "[![Deploy to Hostinger](https://img.shields.io/badge/Deploy%20to-Hostinger-FF6B6B?style=for-the-badge&logo=cloudflare)](ONE_CLICK_DEPLOY.md)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harishbabu-quadagile/quadagile-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/harishbabu-quadagile/quadagile-website/issues"
+  },
+  "homepage": "https://github.com/harishbabu-quadagile/quadagile-website#readme",
+  "dependencies": {
+    "basic-ftp": "^5.1.0",
+    "dotenv": "^17.2.4"
+  }
+}
